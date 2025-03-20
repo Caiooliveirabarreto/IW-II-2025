@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bem-vindo ao visualizador de notas!</h1>
+    
+    <button id="botao">Verificar minha nota</button>
+    
+    <script>
+        const botao = document.querySelector("#botao")
+        botao.addEventListener("click", () => {
+            let nota = prompt("Digite sua nota: ", 0);
+            
+            if(nota >= 7){
+                console.log("Você passou de ano! Parabéns!");
+            }
+            else if(nota >= 5 && nota<= 6.9){
+                console.log("Você ficou de recuperação! Se esforce mais no ano que vem!");
+            }
+            else{
+                console.log("Você repetiu de ano! Que tristeza :(");
+            }
+        })
+    </script>
+</body>
+</html>
