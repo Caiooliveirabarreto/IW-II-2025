@@ -14,15 +14,25 @@
         const botao = document.querySelector("#botao")
         botao.addEventListener("click", () => {
             let nota = prompt("Digite sua nota: ", 0);
-            
-            if(nota >= 7){
-                console.log("Você passou de ano! Parabéns!");
-            }
-            else if(nota >= 5 && nota<= 6.9){
-                console.log("Você ficou de recuperação! Se esforce mais no ano que vem!");
+            if (typeof(nota) != Number){
+                console.log("A nota deve ser um número!");
             }
             else{
-                console.log("Você repetiu de ano! Que tristeza :(");
+                if(nota >= 7){
+                console.log("Você passou de ano! Parabéns!");
+                }
+                else if(nota > 10){
+                    console.log("Nota não é válida");
+                }
+                else if(nota < 1){
+                    console.log("Nota não é válida");
+                } 
+                else if(nota >= 5 && nota<= 6.9){
+                    console.log("Você ficou de recuperação! Se esforce mais no ano que vem!");
+                }
+                else{
+                    console.log("Você repetiu de ano! Que tristeza :(");
+                }
             }
         })
     </script>
