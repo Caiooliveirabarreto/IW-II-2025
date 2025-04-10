@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+    <body>
+        
+    </body>
+    <script>
+        let opcao = prompt(
+            "Bem Vindo ao Menu!\n" +
+            "1 - Ver mensagem de boas-vindas\n" +
+            "2 - Calcular números\n" +
+            "3 - Sair\n" +
+            "Escolha uma opção:"
+        );
+
+        switch (opcao) {
+            case "1":
+                alert("Olá! Bem-vindo ao menu.");
+                break;
+            case "2":
+                let num1 = parseFloat(prompt("Digite o primeiro número:"));
+                let num2 = parseFloat(prompt("Digite o segundo número:"));
+                let soma = num1 + num2;
+                if (isNaN(num1) || isNaN(num2)) {
+                    alert("Você deve digitar números válidos!");
+                }
+                else {
+                        alert("A soma é: " + soma);
+                    }
+                break;
+            case "3":
+                alert("Tchau!");
+                break; // Encerra o loop
+            default:
+                alert("Você deve escolher os números exibidos. Tente de novo.");
+        }
+    </script>
+</html>
