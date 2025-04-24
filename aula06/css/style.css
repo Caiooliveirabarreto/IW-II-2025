@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(114, 150, 182);
+    color:rgb(13, 13, 17);
+    text-align: center;
+    align-items: center;
+    padding-top: 10%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+button{
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+*{
+    text-align: center;
+    align-items: center;
+    font-size: 26px;    
+}
+br{
+    display: block;
+    content: ""; 
+    margin-top: 20px; 
+}
