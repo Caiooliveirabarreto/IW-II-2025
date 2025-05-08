@@ -1,9 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById('submit').addEventListener('click', function(){
+    document.getElementById('Enviar').addEventListener('click', function(){
         let texto = document.getElementById('palavras').value;
-        for (let num = 0; num < texto.length; num++) {
+        let num = 0;
+        for (num = 0; num < texto.length; num++) {
         }
-        document.getElementById('mostraNum').innerHTML = "<h1> hello </h1>";
+        document.getElementById('mostraNum').innerHTML = "<h1>" + num + "</h1>";
     })
 })

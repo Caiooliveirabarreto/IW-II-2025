@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+<p>10. Criar carrossel simples de imagens</p>
+<img id="carrossel" src="../img/st,small,507x507-pad,600x600,f8f8f8.u1.jpg" width="300" /> 
+<br>
+<button id="anterior">Anterior</button>
+<button id="proximo">Próximo</button>
+<script>
+    const imagens = ["../img/images.jpg", "../img/istockphoto-868702230-612x612.jpg", "../img/st,small,507x507-pad,600x600,f8f8f8.u1.jpg"];
+    let atual = 0;
+    const carrossel = document.getElementById("carrossel");
+    document.getElementById("proximo").addEventListener("click", () => {
+        atual = (atual + 1) % imagens.length;
+        carrossel.src = imagens [atual];
+    });
+    document.getElementById("anterior").addEventListener("click", () => {
+        atual = (atual - 1 + imagens.length) % imagens.length;
+        carrossel.src = imagens [atual];
+    });    
+    </script>
+</body>
+</html>
