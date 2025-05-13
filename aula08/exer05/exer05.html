@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <style>
+        .pulsar {
+            animation: pulsacao 1.5s ease-in-out;
+        }
+
+        @keyframes pulsacao {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.07); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="p_efeito">
+        Clique no botão para ver um efeito
+    </p>
+    <button id="btn_efeito">Clique aqui para ver um efeito!</button>
+    <script src="script.js"></script>
+</body>
+</html>
